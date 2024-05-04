@@ -1,0 +1,206 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <script src="script.js"></script>
+</head>
+
+<body>
+
+    <div class="grid-container">
+        <header class="cabecera">
+            <a tabindex="-1" href="#"><img  class="logo" src="../Coffee Break Logo.png" /></a>
+
+            <a tabindex="-1" href="../index.html">
+                <p id="titulo">Coffee Break Studios</p>
+            </a>
+            <nav>
+                <ul class="lista">
+                    <li id="ourGames" class="dropdown">
+                        <a href="#" tabindex="1" class="enlacesTexto">Our Games</a>
+                        <a tabindex="-1"  href="#"><img loading="lazy" class="iconos" src="../Iconos/coleccion claro.png" /></a>
+                        <div class="dropdown-content">
+                          <a href="../juegos/juego1/juego.html">Unpacking</a>
+                          <a href="../juegos/juego2/juego.html">Coffee Talk</a>
+                          <a href="../juegos/juego3/juego.html">Spiritfarer</a>
+                          <a href="../juegos/juego4/juego.html">Stardew Valley</a>
+                        </div>
+                    </li>
+                    <li>
+                        <a href="../informacion/informacion.html" tabindex="2" class="enlacesTexto">About Us</a>
+                        <a  tabindex="-1" href="../informacion/informacion.html"><img class="iconos"src="../Iconos/descripcion claro.png" /></a>
+                    </li>
+                    <li>
+                        <a href="../merchandise/merchandise.html" tabindex="3" class="enlacesTexto" id="actualT">Shop</a>
+                        <a tabindex="-1"  href="../merchandise/merchandise.html"><img   loading="lazy" class="iconos" id="actualI" src="../Iconos/carro verde.png" /></a>
+                    </li>
+                    <li>
+                        <a href="../merchandise/cart.html"  tabindex="4" class="enlacesTexto">Cart</a>
+                        <a tabindex="-1"  href="../merchandise/cart.html"><img loading="lazy" class="iconos" src="../Iconos/home claro.png" /></a>
+                    </li>
+                </ul>
+            </nav>
+
+        </header>
+
+
+        <div class="izquierda"></div>
+        <main id="main">
+            <div id="ventana-slider">
+                <div>
+                    <ul class="slider">
+                        <li id="slide1">
+                            <img src="../merchandise/banner1.png" />
+                        </li>
+                        <li id="slide2">
+                            <img src="../merchandise/banner2.png" />
+                        </li>
+                        <li id="slide3">
+                            <img src="../merchandise/banner3.png" />
+                        </li>
+                    </ul>
+                </div>
+                <div>
+                    <ul class="menu">
+                        <li>
+                            <a href="#slide1"></a>
+                        </li>
+                        <li>
+                            <a href="#slide2"></a>
+                        </li>
+                        <li>
+                            <a href="#slide3"></a>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+
+            <div class="informacion">
+                <div>
+                    <p id="tituloBajo">
+                        Other Products
+                    </p>
+                </div>
+            </div>
+            <div id="listaProducts">
+                <div class="products">
+
+                    <div class="product">
+                        <div>
+                            <img id="keys" data-src="../imagenes/merchandise 2.jpg" src="../imagenes/merchandise 2.jpg" />
+                        </div>
+                        <div>
+                            <div>
+                                <p> Keychain - Stardew Valley </p>
+                            </div>
+                            <div>
+                                <button class="comprar"><img class="carro"  src="../Iconos/carro claro.png" /></button>
+                                <p class="descripcion">
+                                    19.99 €
+                                </p>
+                            </div>
+                            <div>
+                                <button class="eliminar"><img class="carro"/>Eliminar</button>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="product">
+                        <div>
+                            <img id="laundry" data-src="../imagenes/merchandise 3.jpg" src="../imagenes/merchandise 3.jpg" />
+                        </div>
+                        <div>
+                            <div>
+                                <p>Laundry Chest - Unpacking</p>
+                            </div>
+                            <div>
+                                <button class="comprar"><img class="carro" src="../Iconos/carro claro.png" /></button>
+                                <p class="descripcion">
+                                    11.95 €
+                                </p>
+                            </div>
+                            <div>
+                                <button class="eliminar"><img class="carro"/>Eliminar</button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+        </main>
+        <div id="derecha">
+            <img class="imagen" src="../Iconos/language claro.png" />
+         
+            <a href="../informacion/informacion.html"><img loading="lazy" class="iconosLateral" src="../Iconos/descripcion claro.png" /></a>
+            <a href="../informacion/informacion.html"><img loading="lazy" class="iconosLateral" src="../Iconos/coleccion claro.png" /></a>
+            <a href="../merchandise/merchandise.html"><img loading="lazy" class="iconosLateral" src="../Iconos/carro claro.png" /></a>
+            <a href="../merchandise/cart.html"><img loading="lazy" class="iconosLateral" src="../Iconos/home claro.png" /></a>
+
+
+            <button id="subir" style="display: none;">Volver</button>
+
+            <div class="carrito">
+                <img src="../Iconos/carro oscuro.png" alt="Carrito" />
+                <div class="cart-dropdown">
+                    <ul class="cart-items"></ul>
+                </div>
+            </div>
+            
+        </div>
+
+
+
+
+
+        <footer id="pie">
+            <div>
+                <img class="imagenPie" src="../Coffee Break Logo.png" />
+            </div>
+            <div>
+                <p class="tituloPie">
+                    Coffee Break Studios
+                    <span class="chiquito">
+                        <br>info@coffeebreak.com<br>2023 Coffee Break Studios
+                    </span>
+                </p>
+            </div>
+            <div>
+                <a href="https://www.instagram.com/not_morris/?hl=es">
+                    <img class="redes" href="" src="../Iconos/instagram claro.png" />
+                </a>
+
+                <a href="https://www.youtube.com/@LarianStudios">
+                    <img class="redes" src="../Iconos/youtube claro.png" />
+                </a>
+
+                <a href="https://twitter.com/spellmasons">
+                    <img class="redes" src="../Iconos/twitter claro.png" />
+                </a>
+            </div>
+            <div class="pieDerecho">
+                 <a href="../informacion/informacion.html">
+                    <img loading="lazy" class="mapa" src="../imagenes/google maps.jpg" alt="Imagen del mapa" />
+                </a>
+                <p class="creditosPie">
+                    Calle Álvaro. 31, Ático 0º<br>
+                    La Rioja<br>
+                    12448<br>
+                    <br>
+                    +34 965 31 84 19<br>
+                    +34 689 25 44 14
+                </p>
+            </div>
+
+        </footer>
+
+
+
+    </div>
+</body>
+
+
+
+</html>
