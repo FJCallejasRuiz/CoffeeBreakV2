@@ -1,0 +1,498 @@
+.cabecera {
+  font-family: 'Croogla4F';
+  grid-area: header;
+}
+
+.izquierda {
+  grid-area: left;
+}
+
+#main {
+  grid-area: main;
+}
+
+#derecha {
+  grid-area: right;
+}
+
+#pie {
+  grid-area: footer;
+}
+/*Parte encargada de implementar la fuente al css para la visualización correcta del html*/
+
+.centrado{
+  position: absolute;
+  top: 30%;
+  left: 10%;
+  transform: translate(-50%, -50%);
+  color: #F3DEBA;
+  font-family: 'Croogla4F';
+}
+
+@font-face {
+  font-family: 'Croogla4F';
+  src: url('font/Croogla4F.eot');
+  /* IE9 Compat Modes */
+  src:
+    url('font/Croogla4F.woff2') format('woff2'),
+    /* Super Modern Browsers */
+    url('font/Croogla4F.woff') format('woff'),
+    /* Pretty Modern Browsers */
+    url('fonts/CaviarDreams.ttf') format('truetype');
+  /* Safari, Android, iOS */
+  font-weight: 400;
+  font-style: normal;
+}
+/*Toda esta parte es para evitar que las fuentes tengan el formato default y que no se vean alteradas por haberlas clickado.*/
+A:link {
+  color: #F3DEBA;
+  text-decoration: none;
+  transition: color 0.5s ease-out;
+}
+
+A:hover {
+  color: #F3DEBA;
+  text-decoration: none
+}
+
+A:visited {
+  color: #F3DEBA;
+  text-decoration: none
+}
+/*Un truco facilitado por Óscar para que el movimiento de la página al cambiar en el slider sea más suave.*/
+html {
+  scroll-behavior: smooth;
+  background-color: #564B3C;
+}
+/*
+Un grid cointainer para el estilo que quiero que se vea la página, con unos laterales que tambien vayan por el header
+(pero no por el footer) Y define el color del fondo de lo que sera todo, de esta forma destaco luego especificando el div 
+con un cuadrado del color F3DEBA, que es más claro y hago las distinciones más limpias.
+*/
+.grid-container {
+  display: grid;
+  grid-template:
+    'left header header header header right'
+    'left main main main main right'
+    'footer footer footer footer footer footer';
+  background-color: #564B3C;
+}
+
+.cabecera {
+  /*position: sticky; top: 0;*/
+  transition: padding-bottom 0.5s ease;
+  display: grid;
+  grid-template:
+    'imagen cabecera lista';
+}
+
+.dropdown-content {
+  padding: 20px;
+  display: none;
+  position: absolute;
+  background-color: #F3DEBA;
+  box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+  z-index: 1000;
+  top: 100%;
+  left: 50%;
+  transform: translateX(-50%);
+  min-width: 200px;
+  white-space: nowrap;
+  text-align: center;
+  border-radius: 8px;
+}
+
+.dropdown-content a {  
+  padding: 10px 20px;
+  color: #564B3C;
+  text-decoration: none;
+  border-radius: 8px;
+  transition: background-color 1.3s ease-out;
+  
+}
+.dropdown-content a:hover{
+  color:#F3DEBA;
+  background-color: #746551;
+
+  text-decoration: none;
+  border-radius: 8px;
+
+}
+
+/*Aquí la parte que especifiqué antes para destacar lo que yo quiera*/
+.grid-container>main {
+  background-color: #F3DEBA;
+  text-align: center;
+  font-size: 30px;
+}
+
+.grid-container>footer {
+  background-color: #F3DEBA;
+  text-align: center;
+  font-size: 30px;
+}
+
+.grid-container>#derecha {
+  background-color: #564B3C;
+  text-align: center;
+  font-size: 30px;
+}
+
+.grid-container>.izquierda {
+  background-color: #564B3C;
+  text-align: center;
+  font-size: 30px;
+}
+
+.grid-container>header {
+  background-color: #746551;
+  color: #F3DEBA;
+  text-align: left;
+  font-size: 30px;
+}
+
+ul.lista li {
+  display: inline;
+  margin-left: 30px;
+  transition: filter 0.5s ease-out;
+}
+
+ul.lista li:hover {
+  filter: drop-shadow(5px 5px 10px rgba(10, 0, 0, 1));
+
+
+}
+
+.logo {
+  width: 56px;
+  height: 62px;
+  padding-top: 30px;
+  padding-left: 30px;
+  padding-bottom: 30px;
+}
+
+.consolas {
+  flex: 2;
+  height: auto;
+  max-width: 20%;
+  padding: 12px;
+
+}
+
+.iconos {
+  width: 30px;
+}
+.iconosLateral{
+  display: none;
+
+}
+.tituloJuego{
+  font-family: 'Croogla4F';
+}
+#parrafo {
+  font-family: 'Nunito';
+  color: #564B3C;
+  flex: 1;
+  font-size: 25px;
+  text-align: justify;
+  filter: drop-shadow(5px 5px 10px rgba(0, 0, 0, 0.4));
+}
+
+#boton {
+  font-family: 'Croogla4F';
+  background-color: #ABC4AA;
+  border: 4px solid #564B3C;
+  color: #564B3C;
+  padding: 10px 20px;
+  text-align: center;
+  text-decoration: none;
+  cursor: pointer;
+  filter: drop-shadow(5px 5px 10px rgba(0, 0, 0, 1));
+  transition: background-color 0.5s ease-out;
+}
+
+#boton:hover {
+  background-color: #627761;
+
+  color: #29241d;
+}
+
+.izquierda {
+  margin: 50px;
+}
+
+#derecha {
+  margin: 50px;
+}
+
+#derecha img {
+  height: auto;
+  max-width: 35px;
+}
+
+#derecha img:hover {
+  height: auto;
+  max-width: 37px;
+  transition: max-width 0.5s ease-out;
+}
+
+#subir {
+  font-family: 'Croogla4F';
+  display: none;
+  position: fixed;
+  bottom: 20px;
+  right: 20px;
+  padding: 12px 24px;
+  font-size: 18px; /* Tamaño de texto */
+  cursor: pointer;
+  background-color: #ABC4AA;
+  color: #564B3C;
+  border: none;
+  border-radius: 8px;
+  transition: background-color 0.3s ease, padding 0.3s ease, bottom 0.3s ease, right 0.3s ease;
+}
+#subir:hover{
+  background-color:#F3DEBA;
+  padding: 15px 28px;
+  bottom: 17px;
+  right: 16px;
+
+}
+
+.informacion {
+  justify-content: center;
+  align-items: center;
+  padding-left: 60px;
+  padding-right: 60px;
+  display: flex;
+}
+
+.juegos {
+  max-width: min-content;
+  justify-content: center;
+  align-items: center;
+  text-align: justify;
+  padding-left: 60px;
+  padding-right: 60px;
+  display: block;
+  color: #564B3C;
+  float: left;
+
+}
+
+.juegos>.descripcion {
+  font-family: 'Nunito';
+  font-size: 20px;
+}
+
+#listaJuegos {
+  justify-content: center;
+  display: flex;
+  align-items: center;
+  text-align: center;
+}
+
+
+
+.coffee {
+  height: auto;
+  max-width: 255px;
+}
+
+.stardew {
+  height: auto;
+  max-width: 255px;
+}
+
+.carro {
+  height: auto;
+  max-width: 44px;
+}
+
+
+.grid-container>#pie {
+  font-family: 'Nunito';
+  text-align: left;
+  display: inline-flex;
+  background-color: #564B3C;
+  color: #F3DEBA;
+
+  padding: 20px 10px 20px 110px;
+  justify-content: left;
+  align-items: center;
+}
+
+.pieDerecho {
+  margin-left: 250px;
+  display: inline-flex;
+  text-align: left;
+}
+
+
+.imagenPie {
+  vertical-align: middle;
+  width: 89px;
+  height: 100px;
+  flex-shrink: 0;
+  padding-right: 15px;
+}
+
+.mapa {
+  width: 336px;
+  height: 176px;
+  flex-shrink: 0;
+}
+
+
+.tituloPie {
+  font-family: 'Croogla4F';
+  font-size: 22px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: normal;
+}
+
+.creditosPie {
+  padding-left: 10px;
+  font-family: Nunito;
+  font-size: 13px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: normal;
+}
+
+.chiquito {
+  font-family: Nunito;
+  font-size: 13px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: normal;
+
+}
+
+.redes {
+  margin-left: 50px;
+  width: 30px;
+  height: 30px;
+  flex-shrink: 0;
+  float: left;
+}
+
+
+
+
+
+
+
+#ventana-slider {
+  margin: auto;
+  max-width: 1200px;
+  width: 100%;
+  box-sizing: border-box;
+  
+}
+
+ul.slider {
+  position: relative;
+  max-width: 1200px;
+  width: 100%;
+  height: 500px;
+}
+
+ul.slider li {
+  position: absolute;
+  right: 20px;
+  top: 0px;
+  opacity: 0;
+  list-style: none;
+  width: inherit;
+  height: inherit;
+  transition: opacity 1s;
+}
+
+ul.slider li img {
+  width: 100%;
+  height: 500px;
+  object-fit: cover;
+}
+
+ul.slider li:first-child {
+  opacity: 1;
+}
+
+ul.slider li:target {
+  opacity: 1;
+}
+
+.menu {
+  text-align: center;
+  margin: 20px;
+}
+
+.menu li {
+  display: inline-block;
+  text-align: center;
+}
+
+.menu li a {
+  display: inline-block;
+  text-decoration: none;
+  background-color: #ABC4AA;
+  padding: 10px;
+  width: 20px;
+  height: 20px;
+  font-size: 20px;
+  border-radius: 100%;
+}
+
+
+@media (max-width: 830px) {
+
+
+  .grid-container {
+    display: grid;
+    grid-template:
+      'left header header header header right'
+      'left main main main main right'
+      'footer footer footer footer footer footer';
+    background-color: #564B3C;
+  }
+
+  .iconos {
+    display: none;
+
+  }
+  .iconosLateral{
+    width: 35px;
+    padding: 15px;
+    display: block;
+
+  }
+
+  .enlacesTexto {
+    display: none;
+  }
+
+  #titulo {
+    font-size: 120%;
+  }
+
+  ul.slider li img {
+    width: 90%;
+    height: 500px;
+    object-fit: cover;
+    
+  }
+
+  #boton {
+    font-size: 70%;
+  }
+
+  .pieDerecho {
+    margin-left: 6%;
+    display: inline-flex;
+    text-align: left;
+  }
+
+
+}

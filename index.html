@@ -1,0 +1,206 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <script src="script.js"></script>
+</head>
+
+<body>
+
+    <div class="grid-container">
+        <header class="cabecera">
+            <a tabindex="-1" href="index.html"><img loading="lazy" class="logo" src="Coffee Break Logo.png" /></a>
+
+            <a tabindex="-1" href="index.html">
+                <p id="titulo">Coffee Break Studios</p>
+            </a>
+            <nav>
+                <ul class="lista">
+                  <li id="ourGames" class="dropdown">
+                    <a tabindex="1" href="#" class="enlacesTexto">Our Games</a>
+                    <a tabindex="-1" href="#"><img loading="lazy" class="iconos" src="Iconos/coleccion claro.png" /></a>
+                    <div class="dropdown-content">
+                      <a href="juegos/juego1/juego.html">Unpacking</a>
+                      <a href="juegos/juego2/juego.html">Coffee Talk</a>
+                      <a href="juegos/juego3/juego.html">Spiritfarer</a>
+                      <a href="juegos/juego4/juego.html">Stardew Valley</a>
+                    </div>
+                  </li>
+                  
+                  <li>
+                    <a tabindex="2" href="informacion/informacion.html" class="enlacesTexto">About Us</a>
+                    <a tabindex="-1" href="informacion/informacion.html"><img loading="lazy" class="iconos" src="Iconos/descripcion claro.png" /></a>
+                  </li>
+                  <li>
+                    <a tabindex="3" href="merchandise/merchandise.html" class="enlacesTexto">Shop</a>
+                    <a tabindex="-1" href="merchandise/merchandise.html"><img loading="lazy" class="iconos" src="Iconos/carro claro.png" /></a>
+                  </li>
+                  <li>
+                    <a tabindex="4" href="merchandise/cart.html" class="enlacesTexto">Cart</a>
+                    <a tabindex="-1" href="merchandise/cart.html"><img loading="lazy" class="iconos" src="Iconos/home claro.png" /></a>
+                  </li>
+                </ul>
+            </nav>
+              
+        </header>
+
+
+        <div class="izquierda"></div>
+        <main id="main">
+            <div id="ventana-slider">
+                <div>
+                    <ul class="slider">
+                        <li id="slide1">
+                            <img loading="lazy" src="imagenes/unpacking.jpg" />
+                        </li>
+                        <li id="slide2">
+                            <img loading="lazy" src="imagenes/unpacking foto.png" />
+                        </li>
+                        <li id="slide3">
+                            <img loading="lazy" src="imagenes/unpacking foto 2.png" />
+                        </li>
+                    </ul>
+                </div>
+                <div>
+                    <ul class="menu">
+                        <li>
+                            <a href="#slide1"></a>
+                        </li>
+                        <li>
+                            <a href="#slide2"></a>
+                        </li>
+                        <li>
+                            <a href="#slide3"></a>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+
+            <div class="informacion">
+                <div>
+                    <p id="parrafo">
+                        Unpacking is a BAFTA Award-winning zen
+                        game about the familiar experience of pulling
+                        possessions out of boxes and fitting them into
+                        a new home. Part block-fitting puzzle, part home
+                        decoration, you are invited to create a satisfying
+                        living space while learning clues about the life you’re unpacking.
+                    </p>
+                </div>
+                <div>
+                    <img loading="lazy" class="consolas" src="Iconos/xbox_logo_icon_206631.png" />
+                    <img loading="lazy" class="consolas" src="Iconos/switch_nintendo_icon_213716.png" />
+                    <img loading="lazy" class="consolas" src="Iconos/steam_logo_icon_206670.png" />
+                </div>
+                <div>
+                    <a href="juegos/juego1/juego.html"><button id="boton">See more</button></a>
+                </div>
+
+            </div>
+            <div id="listaJuegos">
+                <div class="juegos">
+                    <a href="juegos/juego2/juego.html"><img loading="lazy" alt="coffee break logo" class="coffee" src="imagenes/coffee talk pequeño.jpg" /> </a>
+                    <p class="tituloJuego">Coffee Talk</p>
+                    <a href="juegos/juego2/juego.html" class="enlacesTexto"><button id="boton">See more</button></a>
+                    
+                    <p class="descripcion">
+                        Coffee Talk is a coffee brewing and heart-to-heart talking
+                        simulator about listening to fantasy-inspired modern peoples’
+                        problems, and helping them by serving up a warm drink or two.
+                    </p>
+                </div>
+
+                <div class="juegos">
+                    <a href="juegos/juego3/juego.html"><img loading="lazy" alt="spiritfarer logo"class="spiritfarer" src="imagenes/Spiritfarer_cover_art pequeño.jpg" /></a>
+                    <p class="tituloJuego">Spiritfarer</p>
+                    <a href="juegos/juego3/juego.html" class="enlacesTexto"><button id="boton">See more</button></a>
+                    <p class="descripcion">
+                        Spiritfarer is an indie adventure game where the player must
+                        meet the needs of the spirits aboard their ship with foods
+                        and building boat additions. This leads to the player collecting
+                        materials while on their.
+                    </p>
+                </div>
+
+                <div class="juegos">
+                    <a href="juegos/juego4/juego.html"><img loading="lazy" alt="stardew valley logo" class="stardew" src="imagenes/stardew valley pequeño.jpg" /></a>
+                    <p class="tituloJuego">Stardew Valley</p>
+                    <a href="juegos/juego4/juego.html" class="enlacesTexto"><button id="boton">See more</button></a>
+                    <p class="descripcion">
+                        Stardew Valley is an open-ended country-life RPG!
+                        You've inherited your grandfather's old farm plot in Stardew Valley.
+                        Armed with hand-me-down tools and a few coins.
+                    </p>
+                </div>
+            </div>
+        </main>
+        <div id="derecha">
+            <img loading="lazy" alt="Idiomas icono" class="imagen" src="Iconos/language claro.png" />
+            
+            <a href="informacion/informacion.html"><img loading="lazy" class="iconosLateral" src="Iconos/descripcion claro.png" /></a>
+            <a href="informacion/informacion.html"><img loading="lazy" class="iconosLateral" src="Iconos/coleccion claro.png" /></a>
+            <a href="merchandise/merchandise.html"><img loading="lazy" class="iconosLateral" src="Iconos/carro claro.png" /></a>
+            <a href="merchandise/cart.html"><img loading="lazy" class="iconosLateral" src="Iconos/home claro.png" /></a>
+
+
+            <button id="subir" style="display: none;">Volver</button>
+        </div>
+
+
+
+
+
+        <footer id="pie">
+            <div>
+                <img loading="lazy" class="imagenPie" src="Coffee Break Logo.png" />
+                
+            </div>
+            <div>
+                <p class="tituloPie">
+                    Coffee Break Studios
+                    <span class="chiquito">
+                        <br>info@coffeebreak.com<br>2023 Coffee Break Studios
+                    </span>
+                </p>
+            </div>
+            <div>
+                <a href="https://www.instagram.com/not_morris/?hl=es">
+                    <img loading="lazy" class="redes" href="" src="Iconos/instagram claro.png" />
+                </a>
+
+                <a href="https://www.youtube.com/@LarianStudios">
+                    <img loading="lazy" class="redes" src="Iconos/youtube claro.png" />
+                </a>
+
+                <a href="https://twitter.com/spellmasons">
+                    <img loading="lazy" class="redes" src="Iconos/twitter claro.png" />
+                </a> 
+            </div>
+            <div class="pieDerecho">
+                <a href="informacion/informacion.html">
+                    <img loading="lazy" class="mapa" src="imagenes/google maps.jpg" alt="Imagen del mapa" />
+                </a>
+                
+                <p class="creditosPie">
+                    Calle Álvaro. 31, Ático 0º<br>
+                    La Rioja<br>
+                    12448<br>
+                    <br>
+                    +34 965 31 84 19<br>
+                    +34 689 25 44 14
+                </p>
+            </div>
+
+        </footer>
+
+
+
+    </div>
+</body>
+
+
+
+</html>
